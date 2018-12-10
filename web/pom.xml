@@ -9,7 +9,21 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-test-web</artifactId>
+    <artifactId>provider-test-web</artifactId>
+    <name>provider-test-web</name>
+    <packaging>war</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.provider.service</groupId>
+            <artifactId>provider-test-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.provider.service</groupId>
+            <artifactId>provider-test-api-impl</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
