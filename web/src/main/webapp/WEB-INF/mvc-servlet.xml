@@ -10,4 +10,6 @@
             <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
         </context:component-scan>
 
+    <!--<bean name="firstDemoApiImpl" class="com.provider.service.api.impl.FirstDemoApiImpl"/>-->
+
 </beans>
