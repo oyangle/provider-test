@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class FirstDemoApiImpl implements FirstDemoApi{
     public String queryOK() {
-        return "OK";
+        return "this is my firstDrmo.it is a remoute call from provider-test." +
+                "you are so clever!";
     }
 }
