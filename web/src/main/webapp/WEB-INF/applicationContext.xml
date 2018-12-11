@@ -10,5 +10,6 @@
     <context:component-scan base-package="com.provider.service"/>
 
     <import resource="mvc-servlet.xml"/>
+    <import resource="provider.xml"/>
 
 </beans>
