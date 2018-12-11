@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class FirstDemoApiImpl implements FirstDemoApi{
     public String queryOK() {
-        return "this is my firstDrmo.it is a remoute call from provider-test." +
-                "you are so clever!";
+        return "hello,这是我的第一个分布式系统，融入了jenkins,mysql，nginx,redis,git,zookeeper.dubbo等" +
+                "，\n见到你很高兴。";
     }
 }
