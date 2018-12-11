@@ -15,7 +15,7 @@
       <module name="api" target="1.5" />
       <module name="api-impl" target="1.5" />
       <module name="provider_test" target="1.5" />
-      <module name="web" target="1.5" />
+      <module name="web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
