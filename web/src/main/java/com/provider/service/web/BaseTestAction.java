@@ -1,5 +1,7 @@
 package com.provider.service.web;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,11 +23,16 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class BaseTestAction {
 
-    @RequestMapping("/status")
+    private static final Logger LOGGER = LoggerFactory.getLogger(BaseTestAction.class);
+
+
+    @RequestMapping(value = "/status")
     @ResponseBody
     public String status(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap){
 
-        return "GOOD";
+        LOGGER.info("中文测试");
+
+        return "中文------990";
     }
 
 

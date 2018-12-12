@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -9,5 +10,22 @@
         <context:component-scan base-package="com.provider.service.web">
             <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
         </context:component-scan>
+
+    <!--&lt;!&ndash; 注解驱动 &ndash;&gt;-->
+         <!--<mvc:annotation-driven>-->
+             <!--&lt;!&ndash; 指定http返回编码格式，不然返回ajax请求json会出现中文乱码 &ndash;&gt;-->
+             <!--<mvc:message-converters>-->
+                 <!--<bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
+                     <!--<property name="supportedMediaTypes">-->
+                         <!--<list>-->
+                             <!--<value>text/html;charset=UTF-8</value>-->
+                             <!--<value>application/json;charset=UTF-8</value>-->
+                             <!--<value>*/*;charset=UTF-8</value>-->
+                         <!--</list>-->
+                     <!--</property>-->
+                 <!--</bean>-->
+             <!--</mvc:message-converters>-->
+         <!--</mvc:annotation-driven>-->
+
 
 </beans>
