@@ -10,8 +10,8 @@
     <!--定义了提供方应用信息，用于计算依赖关系；在 dubbo-admin 或 dubbo-monitor 会显示这个名字，方便辨识-->
     <dubbo:application name="pf-test-provider" owner="yangle" organization="dubbox"/>
 
-    <!--使用zookeeper注册中心暴露服务 前提是启动zookeeper -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <!--使用zookeeper注册中心暴露服务 前提是启动zookeeper  可以提供多个注册中心实现负载均衡 -->
+    <dubbo:registry address="zookeeper://47.110.229.27:2181"/>
 
     <!-- 用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="20880"/>
