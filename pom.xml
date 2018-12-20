@@ -16,6 +16,7 @@
 
     <properties>
         <provider.test.version>1.0.0-SNAPSHOT</provider.test.version>
+        <provider.test.api.version>1.0.1-SNAPSHOT</provider.test.api.version>
         <spring.version>4.0.6.RELEASE</spring.version>
     </properties>
 

@@ -10,6 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>provider-test-api</artifactId>
-
+    <version>${provider.test.api.version}</version>
 
 </project>
