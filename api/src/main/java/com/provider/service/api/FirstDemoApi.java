@@ -1,5 +1,7 @@
 package com.provider.service.api;
 
+import com.provider.service.api.dto.FirstDemoDTO;
+
 /**
  * @program: provider_test
  * @description: ceshi
@@ -8,6 +10,6 @@ package com.provider.service.api;
  **/
 public interface FirstDemoApi {
 
-    String queryOK();
+    FirstDemoDTO queryOK();
 
 }

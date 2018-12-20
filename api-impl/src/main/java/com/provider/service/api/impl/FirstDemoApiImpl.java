@@ -1,6 +1,7 @@
 package com.provider.service.api.impl;
 
 import com.provider.service.api.FirstDemoApi;
+import com.provider.service.api.dto.FirstDemoDTO;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class FirstDemoApiImpl implements FirstDemoApi{
-    public String queryOK() {
+    public FirstDemoDTO queryOK() {
 
         String demo = "hello，这是第一个仅有架构的分布式系统，业务逻辑可在此架构上编写。用到的技术有如下：" +
                 "git:源码托管地址，很赞。\r\n" +
@@ -28,6 +29,9 @@ public class FirstDemoApiImpl implements FirstDemoApi{
                 "quartz：定时器，触发调度。\r\n" +
                 "你所看到的这段话正是底层的另一应用服务提供。nice to meet you!";
 
-        return demo;
+        FirstDemoDTO demoDTO = new FirstDemoDTO();
+        demoDTO.setDesc(demo);
+
+        return demoDTO;
     }
 }
