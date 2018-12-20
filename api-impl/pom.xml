@@ -15,7 +15,7 @@
         <dependency>
             <groupId>com.provider.service</groupId>
             <artifactId>provider-test-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${provider.test.api.version}</version>
         </dependency>
     </dependencies>
 
