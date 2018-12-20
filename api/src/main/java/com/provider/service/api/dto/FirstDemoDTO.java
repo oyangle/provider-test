@@ -1,5 +1,7 @@
 package com.provider.service.api.dto;
 
+import java.io.Serializable;
+
 /**
  * programname: provider_test
  * <p>
@@ -9,7 +11,7 @@ package com.provider.service.api.dto;
  * <p>
  * created: 2018-12-20 15:45
  **/
-public class FirstDemoDTO {
+public class FirstDemoDTO implements Serializable{
 
     private String desc;
 
